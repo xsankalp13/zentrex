@@ -5,9 +5,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'api.dicebear.com', // Whitelist the domain for the avatar placeholder
+        hostname: 'images.unsplash.com',
         port: '',
-        pathname: '/7.x/avataaars/svg/**',
+        pathname: '/**',
       },
     ],
   },

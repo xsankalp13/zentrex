@@ -12,12 +12,12 @@ const ContentBlock: React.FC<ContentBlockProps> = ({ image, title, text, reverse
   return (
     <div className={`flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 py-16`}>
       {/* Image Side */}
-      <div className="w-full md:w-1/2 h-[500px] relative bg-stone-100 group overflow-hidden rounded-sm">
+      <div className="w-full md:w-1/2 h-[800px] relative bg-stone-100 group overflow-hidden rounded-sm">
         <Image 
           src={image} 
           alt={title} 
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className="object-cover object-center transition-transform duration-700 group-hover:scale-105 "
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
